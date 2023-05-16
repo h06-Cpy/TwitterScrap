@@ -1,7 +1,6 @@
 from datetime import datetime, timezone
 from snscrape.modules.twitter import TwitterSearchScraper
 
-
 def scrape_twitter(query: str, limit: int = 500):
     scraper = TwitterSearchScraper(query)
     end_date = datetime(2019, 5, 1, tzinfo=timezone.utc)
@@ -25,3 +24,5 @@ def scrape_twitter(query: str, limit: int = 500):
                     f.write(tweet.rawContent+'\n')
                     j+=1
         if tweet.date<end_date: break
+
+scrape_twitter('microsoft')

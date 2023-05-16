@@ -1,0 +1,7 @@
+./data
+./venv
+data.zip
+temp.py
+./migrations
+tweet.db
+alembic.ini
