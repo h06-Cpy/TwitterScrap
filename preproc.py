@@ -17,12 +17,13 @@ def preprocess(text:str):
 
     # tokenizing and stemming
     tweet_tokens = tokenizer.tokenize(text)
-    tweet_stem = list()
-    for token in tweet_tokens:
-        tweet_stem.append(stemmer.stem(token))
+    # tweet_stem = list()
+    # for token in tweet_tokens:
+    #     tweet_stem.append(stemmer.stem(token))
 
-    text = ' '.join(tweet_stem)
-    return text
+    # return ' '.join(tweet_stem)
+
+    return ' '.join(tweet_tokens)
 
 print(preprocess('''In honor of 
 @MarvelStudios

@@ -5,6 +5,6 @@ from sqlalchemy.orm import sessionmaker
 db_url='sqlite:///./tweet.db'
 
 engine = create_engine(db_url)
-SessionLocal = sessionmaker(autoflush=False, bind=engine)
+Session = sessionmaker(autoflush=False, bind=engine)
 
 Base = declarative_base()
